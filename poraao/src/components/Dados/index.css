@@ -1,0 +1,23 @@
+
+.backup{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 7rem;
+    background-color: #000000;
+    color: #ffffff;
+
+}
+.text-back{
+    text-align: center;
+}
+.text-back span{
+    font-size: 2rem;
+}
+.text-back .one{
+    color: #d00000;
+}
+.text-back p{
+    margin-top: 2rem;
+}

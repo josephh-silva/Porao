@@ -1,0 +1,85 @@
+.section-three{
+    height: 100vh;
+    text-align: center;
+    background-color: #000000;
+
+}
+.row-container{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 8rem;
+
+   
+    
+}
+.brands span{
+    font-size:3rem;
+}
+.brands{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 1rem;
+    
+   
+  
+}
+.brands img{
+    width: 6rem;
+    overflow: hidden;
+}
+.black{
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.img-phrase{
+    min-height: auto;
+    background-image: url('../../assets/mother2.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    width: 30rem;
+    position: relative;
+    border-radius: 3em;
+    
+}
+.img-phrase::before {
+    content: 'A Loja Porão é uma loja confiável, conhecida pela qualidade dos seus produtos e pelo excelente atendimento. Com foco na satisfação do cliente, oferece segurança nas transações e suporte eficiente, garantindo uma experiência de compra tranquila e confiável.';  /* Necessário para que o pseudo-elemento seja renderizado */
+    position: absolute; /* Posiciona a camada de cor sobre a imagem */
+    top: 15rem;
+    left: 10rem;
+    width: 80%;
+    height: 80%;
+    background-color: #a4161a; /* Cor e transparência (pode alterar conforme necessário) */
+    z-index: 1;  /* Faz com que o pseudo-elemento fique atrás do texto */
+    border-radius: 3rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  /* Efeito de sombra para o quadrado "flutuar" */
+    transform: translateY(-10px); /* Eleva o quadrado um pouco para dar o efeito de flutuação */
+    animation: moveUpDown 2s infinite alternate;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px); /* Mover para baixo */
+    }
+    100% {
+        transform: translateY(-10px); /* Mover de volta para cima */
+    }
+}
+/* Certifique-se de que o conteúdo (texto) está acima da camada de cor */
+.img-phrase > * {
+    position: relative;
+    z-index: 2;
+}

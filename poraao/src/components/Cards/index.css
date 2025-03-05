@@ -1,0 +1,135 @@
+.section-cards {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-evenly;  /* Alinha os itens horizontalmente no centro */
+    align-items: center;  /* Alinha os itens verticalmente no centro */
+    gap: 2rem;  /* Adiciona espaço entre os cartões */
+    background-color: #000000;
+}
+
+.container-card-one, .container-card-two , .container-card-three, .container-card-fuor {
+    width: 15rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    border: solid 0.01rem #8d99ae;
+    border-radius: 0.5rem;
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.img-card {
+    width: 6rem;
+    margin-bottom: 0.9rem;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.text {
+    text-align: center;
+}
+
+.span-concert {
+    background-color: #ba181b;
+    padding: 0.1rem;
+    border-radius: 2rem;
+    color: #ffffff;
+}
+
+.container-card-one::before {
+    content: 'Sua tecnologia, nossa prioridade.';  /* Necessário para que o pseudo-elemento seja renderizado */
+    position: absolute; /* Posiciona a camada de cor sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Cor do fundo */
+    color: #ffffff;
+    z-index: 1;  /* Faz com que o pseudo-elemento fique atrás do texto */
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a visibilidade */
+}
+
+.container-card-one:hover::before {
+    opacity: 1; /* Torna o pseudo-elemento visível quando passar o mouse */
+}
+
+.container-card-two::before {
+    content: 'Tecnologia que trabalha para o seu sucesso.';  /* Necessário para que o pseudo-elemento seja renderizado */
+    position: absolute; /* Posiciona a camada de cor sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Cor do fundo */
+    color: #ffffff;
+    z-index: 1;  /* Faz com que o pseudo-elemento fique atrás do texto */
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a visibilidade */
+}
+
+.container-card-two:hover::before {
+    opacity: 1; /* Torna o pseudo-elemento visível quando passar o mouse */
+}
+.container-card-three::before {
+    content: 'Descomplicando a tecnologia para você.';  /* Necessário para que o pseudo-elemento seja renderizado */
+    position: absolute; /* Posiciona a camada de cor sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Cor do fundo */
+    color: #ffffff;
+    z-index: 1;  /* Faz com que o pseudo-elemento fique atrás do texto */
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a visibilidade */
+}
+
+.container-card-three:hover::before {
+    opacity: 1; /* Torna o pseudo-elemento visível quando passar o mouse */
+}
+.container-card-fuor::before {
+    content: 'Redefinindo o futuro com soluções tecnológicas.';  /* Necessário para que o pseudo-elemento seja renderizado */
+    position: absolute; /* Posiciona a camada de cor sobre a imagem */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Cor do fundo */
+    color: #ffffff;
+    z-index: 1;  /* Faz com que o pseudo-elemento fique atrás do texto */
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.5s ease-in-out; /* Transição suave para a visibilidade */
+}
+
+.container-card-fuor:hover::before {
+    opacity: 1; /* Torna o pseudo-elemento visível quando passar o mouse */
+}

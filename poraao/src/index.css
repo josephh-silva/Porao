@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+*{
+    font-family:  "MuseoModerno" ,Helvetica, sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+    background-color: #000000;
+    
+}
+p, h3, h1, button{
+    overflow: hidden;
+}
