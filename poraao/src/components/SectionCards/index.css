@@ -1,0 +1,9 @@
+.container-g{
+    background-color: #000000;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+}

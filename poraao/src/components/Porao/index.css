@@ -1,38 +1,60 @@
 .container-porao {
     position: relative;  /* Para que o pseudo-elemento seja posicionado corretamente */
-    min-height: 90vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-image: url('../../assets/poraaoo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color: #ffffff;
     background-color: #000000;
 }
+.container-porao::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    /* Garantindo que ocupe toda a largura */
+    height: 100%;   /* Garantindo que ocupe toda a altura */
+    background: rgba(0, 0, 0, 0.5); /* Preto com transparência de 50% */
+    content: "";    /* Necessário para gerar o conteúdo pseudo-elemento */
+    z-index: 0;     /* Garante que o pseudo-elemento fique abaixo do conteúdo */
+}
+
 .container-porao h1{
     font-size: 6rem;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
 
 }
-.container-porao .p-t p{
-    font-size: 1.5rem;
+.container-porao  h2{
+    font-size: 3rem;
+    text-align: center;
+    overflow: hidden;
+    
 }
 button{
     border: none;
      border-radius: 2rem;
-     padding: 1.5rem;
+     padding: 1rem;
      width: auto;
-     background-color: #bf0603;
-     color: #ffffff;
+     background-color: #FFEB3B;
+     color: #000000;
      display: flex;
      align-items: center;
      gap: 1rem;
-     margin-top: 3rem;
+    margin-top: 2rem;
      font-size: large;
+     cursor: pointer;
+     overflow: hidden;
  }
  button .whats{
      width: 3rem;
  }
-
-
+.texts-sliders{
+    margin-top: 5%;
+   
+}

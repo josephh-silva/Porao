@@ -26,26 +26,21 @@ function Cards() {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 1500
+            delay: 500
         });
         reveall.reveal('.container-card-three', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2000
+            delay: 500
         });
         reveall.reveal('.container-card-fuor', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2500
+            delay: 500
         });
-       
-       
-        
-        
 
-    
         // Retorna uma função de cleanup, se necessário, para garantir que o ScrollReveal seja limpo quando o componente for desmontado
         return () => {
             // Não é estritamente necessário aqui, mas pode ser útil se você quiser limpar o ScrollReveal ao desmontar o componente
@@ -56,13 +51,14 @@ function Cards() {
     return (
         <>
             <section className=" conatainer-fluid section-cards ">
-                <div className='container-card-one'>
+                <div className='container-card-one '>
                     <img src={Concert} alt="Img" className='img-card' />
                     <p>Concerto</p>
                     <span>
-                        A Porão é especializada em <span className="span-concert">concerto de computadores,</span> <br />
+                        A Porão é especializada em concerto de computadores, <br />
                         oferecendo reparos rápidos e eficientes para problemas de hardware e software. <br />
-                        <span className="span-concert">Confie na nossa equipe</span> para manter seu PC funcionando perfeitamente!</span> <br />
+                        Confie na nossa equipe para manter seu PC funcionando perfeitamente!
+                    </span>
                 </div>
                 <div className='container-card-two'>
                     <img src={Backup} alt="Img" className='img-card' />
@@ -77,7 +73,7 @@ function Cards() {
                     <img src={Clean} alt="Img" className='img-card' />
                     <p>Limpeza</p>
                     <span>
-                        A Porão oferece serviços de <span className="span-concert">limpeza de computadores,</span> <br />
+                        A Porão oferece serviços de limpeza de computadores, <br />
                         removendo poeira e sujeira que afetam o desempenho do seu PC. <br />
                         Nossa equipe garante que seu equipamento funcione de forma mais rápida e eficiente, <br />
                         prolongando sua vida!
