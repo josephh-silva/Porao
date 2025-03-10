@@ -170,7 +170,7 @@ function Dados() {
                             </SwiperSlide>
                         ))}
                     </Swiper>
-                </div>s
+                </div>
             </section>
         </>
     )
