@@ -6,4 +6,20 @@
     gap: 1rem;
     flex-direction: column;
     align-items: center;
+   padding: 2rem;
+}
+.container-c{
+    background-color: #000000;
+}
+.title-t, .title-p{
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+}
+.title-t{
+    color: #ffea00;
+    font-size: 3rem;
+}
+.c1, .c2, .c3, .c4, .c5, .c6{
+    overflow: hidden;
 }

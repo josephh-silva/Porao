@@ -1,0 +1,46 @@
+.container-about{
+    padding-top: 5rem;
+    margin-left: 6rem;
+    min-height: 80vh;
+}
+.about-one{
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    color: #ffffff;
+}
+.about-one span{
+    margin-left: 1rem;
+    color: #495057;
+}
+.texts{
+    margin: 1rem;
+}
+.button-send{
+    background-color: transparent;
+    color: #ffffff;
+    border: solid 0.1rem #ffffff;
+}
+.icon-about{
+    width:2rem;
+    border: solid 0.1rem #ffea00;
+    padding: 0.3rem;
+    border-radius: 50%;
+}
+
+p{
+    overflow: hidden;
+}
+.img-person{
+    height: 75vh;
+    padding-left: 6rem;
+    overflow: hidden;
+}
+.h2-about{
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-size: 3em;
+    color: #ffea00;
+}

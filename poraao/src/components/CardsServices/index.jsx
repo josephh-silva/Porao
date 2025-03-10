@@ -5,7 +5,7 @@ import Arrow from '../../assets/arrow.svg'
 function CardsServices(props){
     return(
         <>
-           <div className="container-cards">
+        <div className={`container-cards ${props.className ? props.className : ""}`}>
            <div>
                 <img src={props.imagem} alt="img" className='img-card' />
             </div>
@@ -15,7 +15,11 @@ function CardsServices(props){
                     {props.textS}
                 </span>
             </div>
-            <a href="#" className='link'>
+            <a
+             href="#" 
+             className='link'
+             onClick={() => window.open('https://wa.me/5591983029616', '_blank')}
+            >
                 Saiba mais
                 <img src={Arrow} alt="arrow" />
             </a>

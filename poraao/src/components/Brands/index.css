@@ -1,15 +1,14 @@
 .section-three{
-    height: 100vh;
+    height: auto;
     text-align: center;
     background-color: #000000;
+    padding-top: 3rem;
 
 }
 .row-container{
     display: flex;
     justify-content: space-around;
-    padding-top: 8rem;
-
-   
+    padding-top: 3rem;
     
 }
 .brands span{
@@ -28,7 +27,6 @@
 }
 .brands img{
     width: 6rem;
-    overflow: hidden;
 }
 .black{
     background-color: #ffffff;
@@ -67,6 +65,10 @@
     transform: translateY(-10px); /* Eleva o quadrado um pouco para dar o efeito de flutuação */
     animation: moveUpDown 2s infinite alternate;
 }
+.animation{
+    animation: moveUpDown 2s infinite alternate;
+    overflow: hidden;
+}
 @keyframes moveUpDown {
     0% {
         transform: translateY(-10px);
@@ -82,4 +84,9 @@
 .img-phrase > * {
     position: relative;
     z-index: 2;
+}
+
+.title-h4{
+    color: #ffea00;
+    font-size: 2rem;
 }

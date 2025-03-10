@@ -10,7 +10,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Array com os textos para o slider
 const textSlider = [
     { id: 1, text: "Venda de Aparelhos, Assistência Técnica, Recuperação de Dados, Acessórios, Computadores, Notebooks e Games." },
-    { id: 2, text: "Conheça os iPhones novos na KB Tech, unindo design inovador, recursos avançados e a experiência Apple completa." },
+    { id: 2, text: "Conheça os iPhones novos na Porão, unindo design inovador, recursos avançados e a experiência Apple completa." },
     { id: 3, text: "Encontre acessórios originais na Porão, desde capas a fones de ouvido, para melhorar sua experiência." }
 ];
 
@@ -65,13 +65,13 @@ function Porao() {
     return (
         <>
             <nav className="container-porao">
-                <h1>
+                <h1 className='title'>
                     Porão Infocell
                 </h1>
                 <Swiper
                     slidesPerView={sliderPrev} // Define a quantidade de slides visíveis por vez
                     autoplay={{
-                        delay: 5000,  // Tempo entre cada transição
+                        delay: 3000,  // Tempo entre cada transição
                         disableOnInteraction: false,  // Mantém o autoplay ativo mesmo após interação do usuário
                     }}
                     speed={800}  // Define a duração da animação de transição (em milissegundos)

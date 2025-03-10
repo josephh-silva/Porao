@@ -26,25 +26,25 @@ function Brands() {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 1500
+            delay: 500
         });
         reveall.reveal('.card3', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2000
+            delay: 500
         });
         reveall.reveal('.card4', {
             duration: 2000,
             distance: '10rem',
             origin: 'bottom',
-            delay: 2500
+            delay: 500
         });
         reveall.reveal('.card5', {
             duration: 2000,
             distance: '10rem',
             origin: 'botto ',
-            delay: 3000
+            delay: 500
         });
       
         
@@ -61,14 +61,14 @@ function Brands() {
     return (
         <>
             <section className="container-fluid section-three">
-                <div className="row row-container">
-                    <div className="img-phrase col-6"></div>
-                    <div className='brands col-3'>
-                        <img src={Microsoft} alt="img" className= 'card1' />
-                        <img src={Apple} alt="img"  className='black card2'/>
-                        <img src={Android} alt="img" className='black card3' />
-                        <img src={Asus} alt="img"  className='black card4'/>
-                        <img src={Samsung} alt="img" className='black card5'/>
+                <h4 className='title-h4'>Algumas marcas que somos especialistas</h4>
+                <div className="row row-container" id='brands'>
+                    <div className='brands col-12'>
+                        <img src={Microsoft} alt="img" className= 'animation card1 ' />
+                        <img src={Apple} alt="img"  className='black card2 animation'/>
+                        <img src={Android} alt="img" className='black card3 animation' />
+                        <img src={Asus} alt="img"  className='black card4 animation'/>
+                        <img src={Samsung} alt="img" className='black card5 animation'/>
                     </div>  
                 </div>
 

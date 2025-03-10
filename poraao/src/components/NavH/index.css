@@ -1,0 +1,138 @@
+
+
+
+
+/*
+* Aqui começa a magica. 
+*/
+
+/*
+* Esconder o checkbox 
+*/
+.navigation-main > .input {
+  display: none;
+  visibility: hidden;  
+  z-index: -999;
+}
+
+/*
+* Posicionar onde queremos colocar o botão toggle
+* Criando a área de click
+*/
+.navigation-main > .label {  
+  width: 50px;
+  height: 40px;
+    
+  position: absolute;
+  top: 20px;
+  right: 20px;  
+  
+  cursor: pointer;
+  z-index: 10000; /* Garantir que o botão fique acima de outros elementos */
+}
+
+/*
+* Criando o traço central do botão
+*/
+
+.navigation-main .span {  
+  width: 40px;
+  height: 2px;
+  background-color: #eee;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+* Criando os traços top e bottom;
+*/
+
+.navigation-main .span::before,
+.navigation-main .span::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #eee; 
+  transform-origin: center center;
+  transition: all 400ms linear;  
+}
+
+.navigation-main .span::before {
+  bottom: 8px;
+}
+
+.navigation-main .span::after {
+  top: 8px;
+}
+
+/*
+* Aqui começa a mágica do css;
+* usando o seletor ~ para aplicar background e transform nos traços do 
+* botão.
+*/
+
+.input:checked ~ .label .span { 
+  background-color: transparent;
+}
+
+.input:checked ~ .label .span::before {
+  transform: rotate(135deg);
+  bottom: 0;
+}
+
+.input:checked ~ .label .span::after {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+/*
+* Aqui adicionamos os estilo em nossa lista de menu e escondemos na 
+* direção que desejamos.
+*/
+
+.menu-nav {
+    background-color: black;
+  position: fixed;
+  top: 0;            /* Fixa o menu no topo */
+  left: 0;           /* Fixa o menu à esquerda */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 50vh;
+  
+  transition: transform 600ms ease;
+  transform: translate(0, -100%); /* Menu escondido no topo */
+  z-index: 9999; /* Garantir que o menu fique abaixo do botão de toggle, mas na frente de outros elementos */
+}
+
+.menu-nav > .list {
+  list-style: none;  
+} 
+
+.menu-nav .item {
+  padding: 10px;
+  text-align: center;
+}
+
+.menu-nav .link {
+  color: #fff;
+  font-size: 3.5vh;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.menu-nav .link:hover {
+  color: #ffea00;
+}
+
+/*
+* Exibindo o menu quando o checkbox for marcado (toggle)
+*/
+.input:checked ~ .menu-nav {
+  transform: translate(0, 0); /* Faz o menu aparecer */
+}

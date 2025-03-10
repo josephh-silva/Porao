@@ -11,8 +11,8 @@ function Footer(){
                         <div class="single-cta">
                             <i class="fas fa-map-marker-alt"></i>
                             <div class="cta-text">
-                                <h4>Find us</h4>
-                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                                <h4>Localização!</h4>
+                                <span>Tv. São Pedro 652, atrás do Pátio Bélem</span>
                             </div>
                         </div>
                     </div>
@@ -20,7 +20,7 @@ function Footer(){
                         <div class="single-cta">
                             <i class="fas fa-phone"></i>
                             <div class="cta-text">
-                                <h4>Call us</h4>
+                                <h4>Nos Ligue!</h4>
                                 <span>9876543210 0</span>
                             </div>
                         </div>
@@ -29,8 +29,8 @@ function Footer(){
                         <div class="single-cta">
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
-                                <h4>Mail us</h4>
-                                <span>mail@info.com</span>
+                                <h4>Nos mande um email!</h4>
+                                <span>porão12@gmail.com</span>
                             </div>
                         </div>
                     </div>
@@ -43,10 +43,10 @@ function Footer(){
                     <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div class="footer-widget">
                             <div class="footer-widget-heading">
-                                <h3>Subscribe</h3>
+                                <h3>Mande a sua solicitação</h3>
                             </div>
                             <div class="footer-text mb-25">
-                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                <p>Mande a sua solicitação via email!.</p>
                             </div>
                             <div class="subscribe-form">
                                 <form action="#">
@@ -60,11 +60,12 @@ function Footer(){
             </div>
         </div>
         <div class="copyright-area">
-            <div class="container">
+            <div class="container container-f">
                 <div class="row">
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                            <p>Copyright &copy; 2025, Direitos do site <a href="https://codepen.io/anupkumar92/">Porão Infocell</a></p>
+                            <span className='span-footer'>Desenvolvido por Itech Solutions</span>
                         </div>
                     </div>
 

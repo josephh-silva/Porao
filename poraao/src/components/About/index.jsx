@@ -46,7 +46,7 @@ function About(){
             <div className="text-about">
                 <p className='text-p'>A melhor assistência técnica para seus dispositivos! Reparos rápidos e de qualidade.</p>
                 <h3 className='h3'>
-                Conserte Seu Dispositivo com Quem Entende!
+                Conserte Seu dispositivo com quem entende!
                 </h3>
                 <span className='span-t'>
                     Deixe seu aparelho em boas mãos! <br />
