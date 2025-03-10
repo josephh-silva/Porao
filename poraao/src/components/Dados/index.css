@@ -9,6 +9,9 @@
     padding-left: 2rem;
     
 }
+.text-back{
+    margin-left: 3rem;
+}
 .text-back span{
     font-size: 2rem;
 }
@@ -49,10 +52,7 @@
 .img-car{
     width: 28rem;
     height: 100%;
-
-    
 }
-
 .imgg{
     width: 100%;
     height: 70%;

@@ -65,7 +65,7 @@ function Footer(){
                     <div class="col-xl-6 col-lg-6 text-center text-lg-left">
                         <div class="copyright-text">
                             <p>Copyright &copy; 2025, Direitos do site <a href="https://codepen.io/anupkumar92/">Porão Infocell</a></p>
-                            <span className='span-footer'>Desenvolvido por Itech Solutions</span>
+                            <span className='span-footer'>Desenvolvido por iTech Solutions</span>
                         </div>
                     </div>
 

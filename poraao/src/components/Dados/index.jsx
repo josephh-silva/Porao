@@ -2,7 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollReveal from 'scrollreveal'
 import './index.css'
 import { useEffect } from 'react';
-import {  useState } from 'react';
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Like from '../../assets/like.svg'
@@ -16,11 +16,11 @@ import Car4 from '../../assets/car4.jpg'
 import Car5 from '../../assets/car5.jpg'
 
 const imgsCars = [
-    {id: 1, img: Car1},
-    {id: 2, img: Car2},
-    {id: 3, img: Car3},
-    {id: 4, img: Car4},
-    {id: 5, img: Car5}
+    { id: 1, img: Car1 },
+    { id: 2, img: Car2 },
+    { id: 3, img: Car3 },
+    { id: 4, img: Car4 },
+    { id: 5, img: Car5 }
 ]
 
 
@@ -97,80 +97,80 @@ function Dados() {
     return (
         <>
             <section className="backup container-fluid ">
-             <div className="row">
-                <div className="infos-car col-8">
-                <div className="text-back col-4 " id='diferents'>
-                    <div className="header-text ">
-                        <span className='span-tt'>Nossos <span className='one'>Diferenciais</span></span>
-                        <p>
-                            Descubra o que nos diferencia <br />
-                             dos nossos concorentes
-                        </p>
-                    </div>
-                </div>
-                    <div className="infos">
-                        <div className="icon">
-                            <img src={User} alt="icon" className='icon-car' />
-                        </div>
-                        <div className="info-text">
-                            <h3>Atendimento Unico </h3>
-                            <p>
-                            Na Porão, entendemos que cada cliente tem necessidades únicas. <br />
-                            Nosso atendimento personalizado garante soluções sob medida,<br />
-                            proporcionando uma experiência de serviço ao cliente excepcional <br />
-                            e atenciosa.
-                            </p>
-                        </div>
-                    </div>
-                    <div className="infos">
-                        <div className="icon">
-                            <img src={Star} alt="icon" className='icon-car' />
-                        </div>
-                        <div className="info-text">
-                            <h3>Tecnologia de Última Geração </h3>
-                            <p>
-                            Equipada com a mais avançada tecnologia, a Porão está na <br />
-                            vanguarda da inovação técnica. <br />
-                            Nossos laboratórios e ferramentas de última geração permitem diagnósticos <br />
-                            precisos e reparos eficientes,<br />
-                            mantendo seus dispositivos em ótima condição
-                            </p>
-                        </div>
-                    </div>
-                    <div className="infos">
-                        <div className="icon">
-                            <img src={Like} alt="icon" className='icon-car' />
-                        </div>
-                        <div className="info-text">
-                            <h3>Boa Experiência </h3>
-                            <p>
-                            A Porão é referência em qualidade e confiança, 
-                            construída ao longo de uma sólida trajetória.  <br />
-                            Nosso compromisso com a excelência se reflete em cada serviço, <br />
-                            garantindo sempre a satisfação e confiança dos nossos clientes.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <Swiper
-                    slidesPerView={sliderPrev} // Define a quantidade de slides visíveis por vez
-                    autoplay={{
-                        delay: 2000,  // Tempo entre cada transição
-                        disableOnInteraction: false,  // Mantém o autoplay ativo mesmo após interação do usuário
-                    }}
-                    speed={800}  // Define a duração da animação de transição (em milissegundos)
-                    loop={true}  // Ativa o loop para repetir os slides infinitamente
-                    className="container col-4"
-                >
-                    {imgsCars.map((Imgs) => (
-                        <SwiperSlide key={Imgs.id} >
-                            <div className="car">
-                                <img src={Imgs.img} alt="imgs" className='imgg' />
+                <div className="row">
+                    <div className="infos-car col-8">
+                        <div className="text-back col-4 " id='diferents'>
+                            <div className="header-text ">
+                                <span className='span-tt'>Nossos <span className='one'>Diferenciais</span></span>
+                                <p>
+                                    Descubra o que nos diferencia <br />
+                                    dos nossos concorentes
+                                </p>
                             </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
-             </div>s
+                        </div>
+                        <div className="infos">
+                            <div className="icon">
+                                <img src={User} alt="icon" className='icon-car' />
+                            </div>
+                            <div className="info-text">
+                                <h3>Atendimento Único </h3>
+                                <p>
+                                    Na Porão, entendemos que cada cliente tem necessidades únicas. <br />
+                                    Nosso atendimento personalizado garante soluções sob medida,<br />
+                                    proporcionando uma experiência de serviço ao cliente excepcional <br />
+                                    e atenciosa.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="infos">
+                            <div className="icon">
+                                <img src={Star} alt="icon" className='icon-car' />
+                            </div>
+                            <div className="info-text">
+                                <h3>Tecnologia de Última Geração </h3>
+                                <p>
+                                    Equipada com a mais avançada tecnologia, a Porão está na <br />
+                                    vanguarda da inovação técnica. <br />
+                                    Nossos laboratórios e ferramentas de última geração permitem diagnósticos <br />
+                                    precisos e reparos eficientes,<br />
+                                    mantendo seus dispositivos em ótima condição
+                                </p>
+                            </div>
+                        </div>
+                        <div className="infos">
+                            <div className="icon">
+                                <img src={Like} alt="icon" className='icon-car' />
+                            </div>
+                            <div className="info-text">
+                                <h3>Boa Experiência </h3>
+                                <p>
+                                    A Porão é referência em qualidade e confiança,
+                                    construída ao longo de uma sólida trajetória.  <br />
+                                    Nosso compromisso com a excelência se reflete em cada serviço, <br />
+                                    garantindo sempre a satisfação e confiança dos nossos clientes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <Swiper
+                        slidesPerView={sliderPrev} // Define a quantidade de slides visíveis por vez
+                        autoplay={{
+                            delay: 2000,  // Tempo entre cada transição
+                            disableOnInteraction: false,  // Mantém o autoplay ativo mesmo após interação do usuário
+                        }}
+                        speed={800}  // Define a duração da animação de transição (em milissegundos)
+                        loop={true}  // Ativa o loop para repetir os slides infinitamente
+                        className="container col-4"
+                    >
+                        {imgsCars.map((Imgs) => (
+                            <SwiperSlide key={Imgs.id} >
+                                <div className="car">
+                                    <img src={Imgs.img} alt="imgs" className='imgg' />
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>s
             </section>
         </>
     )

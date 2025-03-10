@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Array com os textos para o slider
 const textSlider = [
-    { id: 1, text: "Venda de Aparelhos, Assistência Técnica, Recuperação de Dados, Acessórios, Computadores, Notebooks e Games." },
+    { id: 1, text: "Venda de Aparelhos, Assistência Técnica, Acessórios, Computadores, Notebooks e Games." },
     { id: 2, text: "Conheça os iPhones novos na Porão, unindo design inovador, recursos avançados e a experiência Apple completa." },
     { id: 3, text: "Encontre acessórios originais na Porão, desde capas a fones de ouvido, para melhorar sua experiência." }
 ];
