@@ -2,7 +2,7 @@ import './index.css'; // CSS do componente
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollReveal from 'scrollreveal';
 import Send from './../../assets/send.svg';
-import Video from '../../assets/backnav.mov'; // vídeo importado
+import Video from '../../assets/backnav.mp4'; // vídeo importado
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
