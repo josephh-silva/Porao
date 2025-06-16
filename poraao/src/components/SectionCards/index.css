@@ -1,18 +1,14 @@
 .container-g{
-    background-color: #000000;
-    height: 100vh;
+    height: 110vh;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     flex-direction: column;
     align-items: center;
-   padding: 2rem;
+    padding: 2rem;
 }
-.container-c{
-    background-color: #000000;
-}
+
 .title-t, .title-p{
-    background-color: #000000;
     text-align: center;
     color: #ffffff;
 }
@@ -23,3 +19,90 @@
 .c1, .c2, .c3, .c4, .c5, .c6{
     overflow: hidden;
 }
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .container-g {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      height: auto;
+      padding: 3rem;
+    }
+  
+    .title-t {
+      font-size: 2.5rem;
+    }
+  
+    .title-p {
+      font-size: 1.2rem;
+    }
+  
+    .c1, .c2, .c3, .c4, .c5, .c6 {
+      width: 45%;
+    }
+  }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-g {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      height: auto;
+      padding: 3rem;
+    }
+  
+    .title-t {
+      font-size: 2.5rem;
+    }
+  
+    .title-p {
+      font-size: 1.2rem;
+    }
+  
+    .c1, .c2, .c3, .c4, .c5, .c6 {
+      width: 45%;
+    }
+  }
+  
+@media (min-width: 425px) and (max-width: 768px) {
+    .container-g {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 2rem;
+    }
+  
+    .title-t {
+      font-size: 2.2rem;
+    }
+  
+    .title-p {
+      font-size: 1.1rem;
+    }
+  
+    .c1, .c2, .c3, .c4, .c5, .c6 {
+      width: 90%;
+    }
+  }
+  
+@media (min-width: 320px) and (max-width: 425px) {
+    .container-g {
+      flex-direction: column;
+      align-items: center;
+      height: auto;
+      padding: 1rem;
+    }
+  
+    .title-t {
+      font-size: 2rem;
+    }
+  
+    .title-p {
+      font-size: 1rem;
+    }
+  
+    .c1, .c2, .c3, .c4, .c5, .c6 {
+      width: 100%;
+    }
+  }
+  

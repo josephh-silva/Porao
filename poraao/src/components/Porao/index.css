@@ -1,66 +1,301 @@
 .container-porao {
-    position: relative;  /* Para que o pseudo-elemento seja posicionado corretamente */
+    position: relative;
     height: 95vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('../../assets/poraaoo.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     color: #ffffff;
     aspect-ratio: 3/2;
-    /* update the 85% to control the curvature
-       you can also update the 50% to control the position
-    */
     clip-path: ellipse(100% 100% at 50% 0%);
+    overflow: hidden;
+    z-index: 1;
 }
-.container-porao::before {
+
+/* vídeo de fundo */
+.bg-video {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;    /* Garantindo que ocupe toda a largura */
-    height: 100%;   /* Garantindo que ocupe toda a altura */
-    background: rgba(0, 0, 0, 0.5); /* Preto com transparência de 50% */
-    content: "";    /* Necessário para gerar o conteúdo pseudo-elemento */
-    z-index: 0;     /* Garante que o pseudo-elemento fique abaixo do conteúdo */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    pointer-events: none;
 }
 
-.container-porao h1{
+/* overlay escuro */
+.container-porao::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+}
+
+/* conteúdo por cima do vídeo */
+.container-porao h1,
+.container-porao h2,
+.container-porao button,
+.container-porao .text-car {
+    position: relative;
+    z-index: 2;
+}
+
+.container-porao h1 {
     font-size: 6rem;
     text-align: center;
     overflow: hidden;
-    z-index: 1;
-    
-
 }
-.container-porao  h2{
+
+.container-porao h2 {
     font-size: 3rem;
     text-align: center;
     overflow: hidden;
-    
 }
-button{
+
+button {
     border: none;
-     border-radius: 2rem;
-     padding: 1rem;
-     width: auto;
-     background-color: #FFEB3B;
-     color: #000000;
-     display: flex;
-     align-items: center;
-     gap: 1rem;
+    border-radius: 2rem;
+    padding: 1rem;
+    width: auto;
+    background-color: #ffea00 ;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     margin-top: 2rem;
-     font-size: large;
-     cursor: pointer;
-     overflow: hidden;
- }
- button .whats{
-     width: 3rem;
- }
-.texts-sliders{
-    margin-top: 5%;
-   
+    font-size: large;
+    cursor: pointer;
+    overflow: hidden;
 }
+
+button .whats {
+    width: 3rem;
+}
+
+.texts-sliders {
+    margin-top: 5%;
+}
+
+h1 span{
+    display: inline;
+    background-color: #ffea00;
+    color: #000000;
+    padding: 0.1rem;
+    border-radius: 1rem;
+}
+@media (min-width: 1801px) and (max-width: 2000px) {
+    .container-porao {
+      padding: 5rem 10rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 6.2rem;
+      margin-bottom: 2.5rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 2.8rem;
+    }
+  
+    .bt {
+      padding: 1.5rem 3.5rem;
+      font-size: 1.7rem;
+    }
+  
+    .bt .whats {
+      width: 3.6rem;
+    }
+  }
+@media (min-width: 1601px) and (max-width: 1800px) {
+    .container-porao {
+      padding: 4rem 8rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 5.8rem;
+      margin-bottom: 2.2rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 2.6rem;
+    }
+  
+    .bt {
+      padding: 1.4rem 3.2rem;
+      font-size: 1.6rem;
+    }
+  
+    .bt .whats {
+      width: 3.4rem;
+    }
+  }
+  
+@media (min-width: 1440px) and (max-width: 1600px) {
+    .container-porao {
+      padding: 3rem 6rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 5.2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 2.4rem;
+    }
+  
+    .bt {
+      padding: 1rem ;
+      font-size: 1.2rem;
+    }
+  
+    .bt .whats {
+      width: 3.2rem;
+    }
+  }
+  @media (min-width: 1024px) and (max-width: 1440px) {
+    .container-porao {
+      padding: 2.5rem 4rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 4rem;  /* tamanho médio */
+      margin-bottom: 1.5rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 2rem;  /* tamanho médio */
+      padding: 0 1rem;
+    }
+  
+    .bt {
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem;  /* tamanho médio */
+      margin-top: 1.5rem;
+      border-radius: 2rem;
+    }
+  
+    .bt .whats {
+      width: 3rem;
+    }
+  }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container-porao {
+      padding: 2.5rem 4rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 4rem;  /* tamanho médio */
+      margin-bottom: 1.5rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 2rem;  /* tamanho médio */
+      padding: 0 1rem;
+    }
+  
+    .bt {
+      padding: 1rem 2.5rem;
+      font-size: 1.3rem;  /* tamanho médio */
+      margin-top: 1.5rem;
+      border-radius: 2rem;
+    }
+  
+    .bt .whats {
+      width: 3rem;
+    }
+  }
+  
+@media (min-width: 426px) and (max-width: 768px) {
+    .container-porao {
+      padding: 2rem 3rem;
+    }
+  
+    .container-porao h1.title {
+      font-size: 3.5rem; /* menor */
+      margin-bottom: 1.5rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 1.8rem; /* menor */
+    }
+  
+    .bt {
+      padding: 1rem 2.5rem;
+      font-size: 1.2rem; /* menor */
+      margin-top: 1.5rem;
+      border-radius: 2rem;
+    }
+  
+    .bt .whats {
+      width: 2.8rem;
+    }
+  }
+  
+@media (min-width: 375px) and (max-width: 425px) {
+    .container-porao {
+      height: 100vh;
+      padding: 1.5rem 2rem;
+      clip-path: ellipse(100% 100% at 50% 0%);
+    }
+  
+    .container-porao h1.title {
+      font-size: 3rem;          /* diminuído de 3.8rem */
+      line-height: 3.4rem;
+      margin-bottom: 1.5rem;    /* um pouco mais espaço abaixo */
+    }
+  
+    .texts-sliders h2 {
+      font-size: 1.4rem;        /* diminuído de 1.8rem */
+      padding: 0 1rem;
+    }
+  
+    .bt {
+      padding: 0.9rem 1.8rem;
+      font-size: 1.2rem;
+      margin-top: 1.8rem;
+      gap: 0.8rem;
+      border-radius: 1.8rem;
+    }
+  
+    .bt .whats {
+      width: 2.6rem;
+    }
+  }
+  
+@media (min-width: 320px) and (max-width: 375px) {
+    .container-porao {
+      height: 100vh;            /* mantém altura total */
+      padding: 1rem 1rem;
+      clip-path: ellipse(100% 100% at 50% 0%);
+    }
+  
+    .container-porao h1.title {
+      font-size: 2.8rem;
+      line-height: 3.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    .texts-sliders h2 {
+      font-size: 1.3rem;
+      padding: 0 0.5rem;
+    }
+  
+    .bt {
+      padding: 0.8rem 1.4rem;
+      font-size: 1.1rem;
+      margin-top: 1.5rem;
+      gap: 0.7rem;
+      border-radius: 1.5rem;
+    }
+  
+    .bt .whats {
+      width: 2.2rem;
+    }
+  }

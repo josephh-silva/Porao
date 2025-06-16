@@ -1,8 +1,17 @@
 .container-cards{
     background-color: #ffffff;
+    border: solid 0.1rem #000000;
+    border-radius: 1rem;
     width: 25rem;
     padding: 1rem;
     color: #000000;
+    cursor: pointer;
+    transition: 0.3s ease-in-out ;
+}
+.container-cards:hover{
+    background-color: yellow;
+    color: black;
+    border: none;
 }
 .img-card{
     width: 4rem;
@@ -14,4 +23,7 @@
 .link{
     text-decoration: none;
     color: #d00000;
+}
+.link:hover{
+    
 }

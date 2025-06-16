@@ -1,46 +1,585 @@
-.container-about{
-    padding-top: 5rem;
-    margin-left: 6rem;
-    min-height: 80vh;
-}
-.about-one{
-    min-height: 80vh;
+.container-about {
+    min-height: 100vh;
+    margin-top: 5rem;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-one {
+    min-height: 100vh;
+    padding: 4rem;
+    color: #ffffff;
+}
+
+.about-one span {
+    color: #ffea00;
+}
+
+.h2-about {
+    font-size: 2.8em;
+    margin-bottom: 2rem;
+    margin-top: 2rem
+}
+
+.texts p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.button-send {
+    background-color: #ff0000;
+    color: #000000;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2rem;
+    display: flex;
     align-items: start;
-    justify-content: start;
-    color: #ffffff;
+    gap: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+
 }
-.about-one span{
-    margin-left: 1rem;
-    color: #495057;
-}
-.texts{
-    margin: 1rem;
-}
-.button-send{
-    background-color: transparent;
-    color: #ffffff;
-    border: solid 0.1rem #ffffff;
-}
-.icon-about{
-    width:2rem;
+
+.icon-about {
+    width: 2rem;
     border: solid 0.1rem #ffea00;
     padding: 0.3rem;
     border-radius: 50%;
 }
 
-p{
+.about-two {
+    position: relative;
+    min-height: 100vh;
     overflow: hidden;
 }
-.img-person{
-    height: 75vh;
-    padding-left: 6rem;
+
+.video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80;
+    width: 70%;
+    z-index: 0;
     overflow: hidden;
+    border-radius: 2rem;
+    margin-top: 1rem
 }
-.h2-about{
-    margin-left: 1rem;
-    margin-top: 1rem;
-    font-size: 3em;
-    color: #ffea00;
+
+.video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    filter: brightness(0.9);
 }
+
+.about-two>*:not(.video-wrapper) {
+    position: relative;
+    z-index: 1;
+}
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .container-about {
+    flex-direction: row;
+    margin-top: 4rem;
+    padding: 0 3rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-one {
+    width: 50%;
+    padding: 3rem;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .h2-about {
+    font-size: 2.4rem;
+    margin: 2rem 0;
+  }
+
+  .texts p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+
+  .button-send {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .icon-about {
+    width: 2rem;
+    padding: 0.3rem;
+  }
+
+  .about-two {
+    width: 50%;
+    min-height: 60vh;
+    position: relative;
+    padding: 1.5rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    height: 90vh;
+    margin-top: 2rem;
+    width: 70%;
+    border-radius: 1.8rem;
+    overflow: hidden;
+  }
+
+  .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 899px) {
+  .container-about {
+    flex-direction: row;
+    margin-top: 4rem;
+    padding: 0 2rem;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-one {
+    width: 50%;
+    padding: 2rem;
+    text-align: left;
+    color: #ffffff;
+  }
+
+  .h2-about {
+    font-size: 2.2rem;
+    margin: 1.5rem 0;
+  }
+
+  .texts p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .button-send {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .icon-about {
+    width: 1.8rem;
+    padding: 0.25rem;
+  }
+
+  .about-two {
+    width: 50%;
+    min-height: 50vh;
+    position: relative;
+    padding: 1rem;
+  }
+
+  .video-wrapper {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: 2rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+  }
+
+  .video-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+  }
+}
+
+
+@media (min-width: 900px) and (max-width: 1024px) {
+    .container-about {
+      flex-direction: row;
+      margin-top: 4rem;
+      padding: 0 3rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .about-one {
+      width: 50%;
+      padding: 3rem;
+      text-align: left;
+      color: #ffffff;
+    }
+  
+    .h2-about {
+      font-size: 2.4rem;
+      margin: 2rem 0;
+    }
+  
+    .texts p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  
+    .button-send {
+      font-size: 1rem;
+      padding: 0.8rem 1.5rem;
+      margin-top: 2rem;
+    }
+  
+    .icon-about {
+      width: 2rem;
+      padding: 0.3rem;
+    }
+  
+    .about-two {
+      width: 50%;
+      min-height: 60vh;
+      position: relative;
+      padding: 1.5rem;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 90vh;
+      margin-top: 6rem;
+      width: 100%;
+      border-radius: 1.8rem;
+      overflow: hidden;
+    }
+  
+    .video-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.8rem;
+    }
+  }
+@media (min-width: 768px) and (max-width: 899px) {
+    .container-about {
+      flex-direction: row;
+      margin-top: 4rem;
+      padding: 0 2rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+  
+    .about-one {
+      width: 50%;
+      padding: 2rem;
+      text-align: left;
+      color: #ffffff;
+    }
+  
+    .h2-about {
+      font-size: 2.2rem;
+      margin: 1.5rem 0;
+    }
+  
+    .texts p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.6;
+    }
+  
+    .button-send {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+      margin-top: 1.5rem;
+    }
+  
+    .icon-about {
+      width: 1.8rem;
+      padding: 0.25rem;
+    }
+  
+    .about-two {
+      width: 50%;
+      min-height: 50vh;
+      position: relative;
+      padding: 1rem;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 80vh;
+      width: 100%;
+      margin-top: 2rem;
+      border-radius: 1.5rem;
+      overflow: hidden;
+    }
+  
+    .video-bg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 1.5rem;
+    }
+  }
+  
+@media (min-width: 576px) and (max-width: 768px) {
+    .container-about {
+      flex-direction: column;
+      margin-top: 4rem;
+      padding: 0 2rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .about-one {
+      padding: 3rem 2.5rem;
+      text-align: center;
+      min-height: auto;
+      width: 100%;
+      max-width: 700px;
+      color: #ffffff;
+    }
+  
+    .h2-about {
+      font-size: 2.2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .texts p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+  
+    .button-send {
+      font-size: 1.1rem;
+      padding: 0.8rem 1.8rem;
+      margin-top: 2.5rem;
+      margin: 0 auto;
+    }
+  
+    .icon-about {
+      width: 2rem;
+      padding: 0.3rem;
+    }
+  
+    .about-two {
+      min-height: 50vh;
+      width: 100%;
+      max-width: 700px;
+      margin-top: 2rem;
+      position: relative;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      border-radius: 2rem;
+      margin-top: 1rem;
+    }
+  
+    .video-bg {
+      border-radius: 2rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+@media (min-width: 425px) and (max-width: 576px) {
+    .container-about {
+      flex-direction: column;
+      margin-top: 3rem;
+      padding: 0 1.5rem;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .about-one {
+      padding: 2.5rem 2rem;
+      text-align: center;
+      min-height: auto;
+      width: 100%;
+      max-width: 600px;
+      color: #ffffff;
+    }
+  
+    .h2-about {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+  
+    .texts p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+      line-height: 1.5;
+    }
+  
+    .button-send {
+      font-size: 1rem;
+      padding: 0.7rem 1.5rem;
+      margin-top: 2rem;
+      margin-left: 0;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+    }
+  
+    .icon-about {
+      width: 1.8rem;
+      padding: 0.25rem;
+    }
+  
+    .about-two {
+      min-height: 40vh;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 1.5rem;
+      position: relative;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 60vh;
+      width: 100%;
+      border-radius: 1.5rem;
+      margin-top: 1rem;
+    }
+  
+    .video-bg {
+      border-radius: 1.5rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  @media (min-width: 375px) and (max-width: 425px) {
+    .container-about {
+      flex-direction: column;
+      margin-top: 3rem;
+      padding: 0 1rem;
+    }
+  
+    .about-one {
+      padding: 2rem 1rem;
+      text-align: center;
+      align-items: center;
+      min-height: auto;
+      min-width: 100%;
+    }
+  
+    .h2-about {
+      font-size: 1.8em;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .texts p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+  
+    .button-send {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      margin-top: 2rem;
+      margin: 0 auto;
+    }
+  
+    .icon-about {
+      width: 1.5rem;
+      padding: 0.2rem;
+    }
+  
+    .about-two {
+      min-height: 30vh;
+      width: 100%;
+      margin-top: 1rem;
+      position: relative;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 40vh;
+      width: 100%;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .video-bg {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+  }
+  
+
+@media (min-width: 320px) and (max-width: 375px) {
+    .container-about {
+      flex-direction: column;
+      margin-top: 3rem;
+      padding: 0 1rem;
+    }
+  
+    .about-one {
+      padding: 2rem 1rem;
+      text-align: center;
+      align-items: center;
+      min-height: auto;
+      min-width: 100%;
+    }
+  
+    .h2-about {
+      font-size: 1.8em;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .texts p {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+  
+    .button-send {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+      margin-top: 2rem;
+      margin: 0 auto;
+    }
+  
+    .icon-about {
+      width: 1.5rem;
+      padding: 0.2rem;
+    }
+  
+    .about-two {
+      min-height: 30vh;
+      width: 100%;
+      margin-top: 1rem;
+      position: relative;
+    }
+  
+    .video-wrapper {
+      position: relative;
+      height: 40vh;
+      width: 100%;
+      border-radius: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .video-bg {
+      border-radius: 1rem;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  

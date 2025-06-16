@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 *{
-    font-family:  "MuseoModerno" ,Helvetica, sans-serif;
+    font-family: 'Rubik', sans-serif;
     
 }
 body{
     overflow-x: hidden;
-    background-color: #000000;
+    background-color: #ffffff;
+    overflow-x: hidden;
     
 }
 p, h3, h1, button{
     overflow: hidden;
 }
+

@@ -97,11 +97,11 @@ function Dados() {
     return (
         <>
             <section className="backup container-fluid ">
-                <div className="row">
+                <div className="row container-full">
                     <div className="infos-car col-8">
                         <div className="text-back col-4 " id='diferents'>
                             <div className="header-text ">
-                                <span className='span-tt'>Nossos <span className='one'>Diferenciais</span></span>
+                                <span className='span-tt'>NOSSOS <span className='one'>DIFERENCIAIS</span></span>
                                 <p>
                                     Descubra o que nos diferencia <br />
                                     dos nossos concorentes
@@ -113,11 +113,11 @@ function Dados() {
                                 <img src={User} alt="icon" className='icon-car' />
                             </div>
                             <div className="info-text">
-                                <h3>Atendimento Único </h3>
+                                <h3>ATENDIMENTO ÚNICO </h3>
                                 <p>
-                                    Na Porão, entendemos que cada cliente tem necessidades únicas. <br />
-                                    Nosso atendimento personalizado garante soluções sob medida,<br />
-                                    proporcionando uma experiência de serviço ao cliente excepcional <br />
+                                    Na Porão, entendemos que cada cliente tem necessidades únicas. 
+                                    Nosso atendimento personalizado garante soluções sob medida,
+                                    proporcionando uma experiência de serviço ao cliente excepcional 
                                     e atenciosa.
                                 </p>
                             </div>
@@ -127,13 +127,13 @@ function Dados() {
                                 <img src={Star} alt="icon" className='icon-car' />
                             </div>
                             <div className="info-text">
-                                <h3>Tecnologia de Última Geração </h3>
+                                <h3>TECNOLOGIA DE ÚLTIMA GERAÇÃO </h3>
                                 <p>
-                                    Equipada com a mais avançada tecnologia, a Porão está na <br />
-                                    vanguarda da inovação técnica. <br />
-                                    Nossos laboratórios e ferramentas de última geração permitem diagnósticos <br />
-                                    precisos e reparos eficientes,<br />
-                                    mantendo seus dispositivos em ótima condição
+                                    Equipada com a mais avançada tecnologia, a Porão está na 
+                                    vanguarda da inovação técnica. 
+                                    Nossos laboratórios e ferramentas de última geração permitem diagnósticos 
+                                    precisos e reparos eficientes,
+                                    mantendo seus dispositivos em ótima condição.
                                 </p>
                             </div>
                         </div>
@@ -142,11 +142,11 @@ function Dados() {
                                 <img src={Like} alt="icon" className='icon-car' />
                             </div>
                             <div className="info-text">
-                                <h3>Boa Experiência </h3>
+                                <h3>BOA EXPERIÊNCIA </h3>
                                 <p>
                                     A Porão é referência em qualidade e confiança,
-                                    construída ao longo de uma sólida trajetória.  <br />
-                                    Nosso compromisso com a excelência se reflete em cada serviço, <br />
+                                    construída ao longo de uma sólida trajetória.  
+                                    Nosso compromisso com a excelência se reflete em cada serviço, 
                                     garantindo sempre a satisfação e confiança dos nossos clientes.
                                 </p>
                             </div>

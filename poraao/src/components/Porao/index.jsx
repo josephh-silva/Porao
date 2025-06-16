@@ -1,11 +1,10 @@
-import './index.css'; // Certifique-se de que o CSS acima está neste arquivo
+import './index.css'; // CSS do componente
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ScrollReveal from 'scrollreveal';
-import Send from './../../assets/send.svg'
+import Send from './../../assets/send.svg';
+import Video from '../../assets/backnav.mov'; // vídeo importado
 import { useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
 
 // Array com os textos para o slider
 const textSlider = [
@@ -15,15 +14,11 @@ const textSlider = [
 ];
 
 function Porao() {
-    const [sliderPrev, setSliderPrev] = useState(1); // Controla a quantidade de slides visíveis
+    const [sliderPrev, setSliderPrev] = useState(1);
 
     useEffect(() => {
-        // Inicializa o ScrollReveal dentro do useEffect
-        const reveall = ScrollReveal({
-            reset: true, // Se quiser que os efeitos sejam reiniciados após saírem da tela
-        });
+        const reveall = ScrollReveal({ reset: true });
 
-        // Coloca as revelações dentro do useEffect
         reveall.reveal('.title', {
             duration: 2000,
             distance: '10rem',
@@ -42,52 +37,54 @@ function Porao() {
             origin: 'bottom',
             delay: 500
         });
-
-        // Cleanup do ScrollReveal, se necessário
-        return () => {
-            // Cleanup do ScrollReveal, se necessário
-        };
     }, []);
 
     useEffect(() => {
         const sizeWindow = () => {
             if (window.innerWidth > 320) {
-                setSliderPrev(1);  // Mostra apenas 1 slide por vez
+                setSliderPrev(1);
             }
         };
         sizeWindow();
-        window.addEventListener("resize", sizeWindow); // Adiciona o evento
+        window.addEventListener("resize", sizeWindow);
         return () => {
-            window.removeEventListener("resize", sizeWindow); // Remove o evento
+            window.removeEventListener("resize", sizeWindow);
         };
     }, []);
 
     return (
         <>
             <nav className="container-porao">
-                <h1 className='title'>
-                    Porão Infocell
-                </h1>
+                {/* Vídeo de fundo */}
+                <video className="bg-video" autoPlay muted loop playsInline>
+                    <source src={Video} type="video/mp4" />
+                    Seu navegador não suporta vídeo em HTML5.
+                </video>
+
+                {/* Conteúdo principal */}
+                <h1 className='title'>Porão <span>Infocell</span></h1>
+
                 <Swiper
-                    slidesPerView={sliderPrev} // Define a quantidade de slides visíveis por vez
+                    slidesPerView={sliderPrev}
                     autoplay={{
-                        delay: 3000,  // Tempo entre cada transição
-                        disableOnInteraction: false,  // Mantém o autoplay ativo mesmo após interação do usuário
+                        delay: 3000,
+                        disableOnInteraction: false,
                     }}
-                    speed={800}  // Define a duração da animação de transição (em milissegundos)
-                    loop={true}  // Ativa o loop para repetir os slides infinitamente
+                    speed={800}
+                    loop={true}
                     className="container"
                 >
                     {textSlider.map((texts) => (
                         <SwiperSlide key={texts.id} className="texts-sliders">
                             <div className="text-car">
-                               <h2>{texts.text}</h2>
+                                <h2>{texts.text}</h2>
                             </div>
                         </SwiperSlide>
                     ))}
                 </Swiper>
+
                 <button
-                    className=" bt"
+                    className="bt"
                     onClick={() => window.open('https://wa.me/5591983029616', '_blank')}>
                     <img src={Send} alt="at" className='whats' />
                     Atendimento
@@ -98,6 +95,7 @@ function Porao() {
 }
 
 export default Porao;
+
 
 
 

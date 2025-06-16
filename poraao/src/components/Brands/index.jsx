@@ -6,6 +6,8 @@ import Asus from '../../assets/asus.png'
 import Microsoft from '../../assets/microsoft.png'
 import Apple from '../../assets/apple.png'
 import Android from '../../assets/android.png'
+import Readmi from '../../assets/readmi.webp'
+import Realme from '../../assets/realmecell.jpg'
 import { useEffect } from 'react';
 
 function Brands() {
@@ -60,16 +62,27 @@ function Brands() {
     }, []);
     return (
         <>
+            <h3>PRODUTOS DE <span>QUALIDADE</span> PARA VOCÊ</h3>
             <section className="container-fluid section-three">
-                <h4 className='title-h4'>Algumas marcas que somos especialistas</h4>
-                <div className="row row-container" id='brands'>
-                    <div className='brands col-12'>
-                        <img src={Microsoft} alt="img" className= 'animation card1 ' />
-                        <img src={Apple} alt="img"  className='black card2 animation'/>
-                        <img src={Android} alt="img" className='black card3 animation' />
-                        <img src={Asus} alt="img"  className='black card4 animation'/>
-                        <img src={Samsung} alt="img" className='black card5 animation'/>
-                    </div>  
+                <div className="col-4 realme ">
+                        <div className="col-6 texts">
+                            <p>READMI</p>
+                            <span>TOTALMENTE INCRIVEL, <br /> READMI FEITO PARA TODOS</span>
+                            <button><a href="#">Confira Já</a></button>
+                        </div>
+                        <div className="col-6 image">
+                            <img src={Readmi} alt="" className='readmi' />
+                        </div>
+                    </div>
+                <div className="col-4 xiaomi ">
+                <div className="col-6 texts">
+                            <p>REALME</p>
+                            <span>INOVACOR, COM ALTA PERFOMANCE, <br /> QUALIDADE TECNOLOGICA</span>
+                            <button><a href="#">Confira Já</a></button>
+                        </div>
+                        <div className="col-6 image">
+                            <img src={Realme} alt="" className='readmi' />
+                        </div>
                 </div>
 
             </section>
@@ -77,3 +90,9 @@ function Brands() {
     )
 }
 export default Brands
+
+/*  <div className="col-6 texts">
+                            <p>REALMI</p>
+                            <span>TOTALMENTE INCRIVEL, <br /> READMI FEITO PARA TODOS</span>
+                            <button><a href="#">Confira Já</a></button>
+                        </div>*/
