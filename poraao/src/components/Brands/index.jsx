@@ -48,11 +48,11 @@ function Brands() {
             origin: 'botto ',
             delay: 500
         });
-      
-        
-        
 
-    
+
+
+
+
         // Retorna uma função de cleanup, se necessário, para garantir que o ScrollReveal seja limpo quando o componente for desmontado
         return () => {
             // Não é estritamente necessário aqui, mas pode ser útil se você quiser limpar o ScrollReveal ao desmontar o componente
@@ -65,24 +65,32 @@ function Brands() {
             <h3>PRODUTOS DE <span>QUALIDADE</span> PARA VOCÊ</h3>
             <section className="container-fluid section-three">
                 <div className="col-4 realme ">
-                        <div className="col-6 texts">
-                            <p>READMI</p>
-                            <span>TOTALMENTE INCRIVEL, <br /> READMI FEITO PARA TODOS</span>
-                            <button><a href="#">Confira Já</a></button>
-                        </div>
-                        <div className="col-6 image">
-                            <img src={Readmi} alt="" className='readmi' />
-                        </div>
+                    <div className="col-6 texts">
+                        <p>READMI</p>
+                        <span>TOTALMENTE INCRIVEL, <br /> READMI FEITO PARA TODOS</span>
+                        <button
+                            className="bt"
+                            onClick={() => window.open('https://wa.me/5591983029616', '_blank')}>
+                            Confira Já
+                        </button>
                     </div>
+                    <div className="col-6 image">
+                        <img src={Readmi} alt="" className='readmi' />
+                    </div>
+                </div>
                 <div className="col-4 xiaomi ">
-                <div className="col-6 texts">
-                            <p>REALME</p>
-                            <span>INOVACOR, COM ALTA PERFOMANCE, <br /> QUALIDADE TECNOLOGICA</span>
-                            <button><a href="#">Confira Já</a></button>
-                        </div>
-                        <div className="col-6 image">
-                            <img src={Realme} alt="" className='readmi' />
-                        </div>
+                    <div className="col-6 texts">
+                        <p>REALME</p>
+                        <span>INOVACOR, COM ALTA PERFOMANCE, <br /> QUALIDADE TECNOLOGICA</span>
+                        <button
+                            className="bt"
+                            onClick={() => window.open('https://wa.me/5591983029616', '_blank')}>
+                            Confira Já
+                        </button>
+                    </div>
+                    <div className="col-6 image">
+                        <img src={Realme} alt="" className='readmi realmee' />
+                    </div>
                 </div>
 
             </section>

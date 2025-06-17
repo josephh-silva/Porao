@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 3rem;
-    color: #ffffff;
+    color: #000000;
     padding-left: 2rem;
     
 }
@@ -12,10 +12,11 @@
     margin-left: 3rem;
 }
 .text-back span{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .text-back .one{
     color: #ffea00;
+    font-weight: 600;
 }
 .text-back p{
     margin-top: 1rem;
@@ -27,6 +28,7 @@
     border-radius: 3rem;
     color: #000000;
     font-size: 1.5REM;
+    padding: 0.3rem;
 }
 
 .infos-car{
@@ -43,10 +45,11 @@
     margin: 2rem;
 }
 .icon-car{
-    border: solid 0.1rem #ffea00;
+    border: solid 0.3rem #ffea00;
     padding: 1.5rem;
     border-radius: 50%;
     width: 6rem;
+    background-color: #000000;
 }
 
 .car{

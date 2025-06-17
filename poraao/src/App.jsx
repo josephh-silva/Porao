@@ -1,9 +1,8 @@
 import './App.css'
 import About from './components/About'
 import AboutUs from './components/AboutUs'
+import Bran from './components/Bran'
 import Brands from './components/Brands'
-import Cards from './components/Cards'
-import CardsServices from './components/CardsServices'
 import Dados from './components/Dados'
 import Footer from './components/Footer'
 import NavH from './components/NavH'
@@ -24,6 +23,7 @@ function App() {
        <Dados/>
        <SectionCards/>
        <Brands/>
+       <Bran/>
        <Footer/>
        </div>
     </>

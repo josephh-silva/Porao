@@ -10,14 +10,39 @@
 
 .title-t, .title-p{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
-.title-t{
-    color: #ffea00;
+.title-t {
+    color: #000000;
     font-size: 3rem;
+    font-weight: 900;
+}
+.title-t span{
+  display: inline-block;
+  color: #ffea00;
 }
 .c1, .c2, .c3, .c4, .c5, .c6{
     overflow: hidden;
+}
+@media(min-width: 1440px) {
+  .container-g {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+    padding: 3rem;
+  }
+
+  .title-t {
+    font-size: 2.5rem;
+  }
+
+  .title-p {
+    font-size: 1.2rem;
+  }
+
+  
 }
 @media (min-width: 1024px) and (max-width: 1440px) {
     .container-g {

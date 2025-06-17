@@ -9,13 +9,13 @@
 }
 h3{
     text-align: center;
-    color: #ffffff;
+    color: #000000;
 }
 h3 span{
     color: #ffea00;
 }
 .realme, .xiaomi {
-    background-color: white;
+    background-color: transparent ;
     min-height: 25vh;
     margin-top: 5rem;
     border-radius: 2rem;
@@ -23,8 +23,9 @@ h3 span{
     flex-direction: row;
     flex-wrap: nowrap; /* <- impede quebra */
     padding: 1rem;
+    border: solid 0.2rem #000000;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
   }
-
 .texts button a{
     text-decoration: none;
     color: black;
@@ -40,6 +41,7 @@ h3 span{
     margin-top: 2rem;
  
 }
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .section-three {
       flex-direction: row;

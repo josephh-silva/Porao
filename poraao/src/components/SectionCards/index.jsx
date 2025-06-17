@@ -63,7 +63,7 @@ function SectionCards(){
     <>
         
         <section className='container-fluid container-c'>
-            <h3 className='title-t'>Nossos Serviços</h3>
+            <h3 className='title-t'>NOSSOS <span>SERVIÇOS</span></h3>
         <p className='title-p'>Enfrentando desafios tecnológicos ou precisando de coisa nova? A Porão Infocell tem!</p>
            <div className="container-g" id='services'>
            <CardsServices
